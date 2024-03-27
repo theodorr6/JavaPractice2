@@ -21,6 +21,22 @@ public class FabricaAudi extends Masina {
         System.out.println("Dotarile exerioare sunt: " + dotariExterioare);
     }
 
+    // polymorphism static
+
+    public void afisarePret(){
+        System.out.println(pretFinal);
+    }
+
+    public void afisarePret(Integer reducere){
+        System.out.println("Pret reducere");
+    }
+
+    public void afisarePret(String voucher){
+        System.out.println("Pret voucher");
+    }
+
+
+
     public void calculDotari() {
         pretFinal = getPret();
         for(Integer index = 0; index < dotariExterioare.size(); index++){
@@ -37,5 +53,9 @@ public class FabricaAudi extends Masina {
                 default:
             }
         }
+    }
+
+    public void pornesteMasina(){
+        System.out.println("Masina Audi porneste de la buton!");
     }
 }

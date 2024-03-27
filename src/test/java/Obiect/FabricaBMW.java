@@ -50,4 +50,8 @@ public class FabricaBMW extends Masina {
             }
         }
     }
+
+    public void pornesteMasina(){
+        System.out.println("Masina BMW porneste de la distanta!");
+    }
 }

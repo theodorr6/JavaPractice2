@@ -22,6 +22,8 @@ public class Masina {
 
 
     // exista 4 concepte OOP = mostenire, incapsulare, abstractizare, polimorfism
+
+
     // MOSTENIREA = conceptul prin care o clasa este mostenita (extinsa) de o alta clasa
     // cand o clasa mosteneste o alta clasa, se formeaza o relatie de parinte-copil
     // in java, o clasa poate mosteni doar o singura clasa
@@ -33,6 +35,18 @@ public class Masina {
     // PUBLIC = ofera vizibilitate in toate pachetele din proiect
     // PRIVATE = Restrange vizibilitatea doar in clasa in care este definit
     // Ca sa oferim vizibilitate proprietatilor in alte clase, apelam la conceptul getter / setter
+
+
+    // POLYMORPHISM - conceptul prin care o metoda poate avea implementari diferite
+    // polymorphism-ul este de doua feluri = dinamic (override) si static (overload)
+    // polymorphism-ul dinamic - intr-o ierarhie de clase obtinute prin mostenire, o metoda poate avea implementari diferite
+    // polymorphism-ul dinamic se regaseste tot timpul in procesul de mostenire
+    // polymorphism-ul static: posibilitatea prin care o metoda cu acelasi nume sa fie implementata de mai multe ori
+    // diferentierea intre aceste metoda se face prin numarul sau tipul de parametri
+    // polymorphism-ul static se poate aplica doar la metodele cu void
+
+
+
     public Masina(String marca, String model, String culoare, String carburant, Integer an, Integer cc) {
         this.marca = marca;
         this.model = model;
@@ -52,6 +66,12 @@ public class Masina {
         this.an = an;
         this.cc = cc;
         this.pret = pret;
+    }
+
+    // definim prima implementare pentru o metoda pe care o vom suprascrie
+
+    public void pornesteMasina(){
+        System.out.println("Masina porneste de la cheie");
     }
 
     public void prezentareMasina(){
